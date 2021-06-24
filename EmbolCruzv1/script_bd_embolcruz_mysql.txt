@@ -1,0 +1,11 @@
+CREATE DATABASE bdembolcruz;
+USE bdembolcruz;
+
+CREATE TABLE usuario(
+  codigo   INTEGER NOT NULL AUTO_INCREMENT,
+  login    VARCHAR(10) NOT NULL,
+  password VARCHAR(10) NOT NULL,
+  estado   INTEGER NOT NULL, #1=Habilitado 2=Deshabilitado
+  PRIMARY  KEY(codigo));
+
+INSERT INTO PARAMETRO(CODIGO,CODUSUARIO) VALUES (1,0);  
